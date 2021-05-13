@@ -1,0 +1,38 @@
+*
+{
+    margin: unset;
+    padding: unset;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+    background: var(--color-bg);
+}
+
+img
+{
+    max-width: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul
+{
+    list-style: none;
+}

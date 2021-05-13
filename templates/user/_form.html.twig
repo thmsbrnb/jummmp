@@ -1,0 +1,69 @@
+{{ form_start(form) }}
+
+<main class="register">
+	<div class="form-register">
+		{# Titre #}
+		<div class="fr-title">
+            <img src="/assets/pen.png">
+            <h4>Modifie ton profil.</h4>
+        </div>
+
+		<div class="fr-container">
+			{# Left #}
+			<section class="fr-left">
+
+				{{ form_label(form.firstName, 'Prénom :', {'label_attr': {'class': 'form-label'}}) }}
+				{{ form_widget(form.firstName, {'attr': {'class': 'form-control','placeholder':"prénom"}}) }}
+				
+				{{ form_label(form.lastName, 'Nom :', {'label_attr': {'class': 'form-label'}}) }}
+				{{ form_widget(form.lastName, {'attr': {'class': 'form-control','placeholder':"nom"}}) }}
+				
+				{{ form_label(form.email, 'Email :', {'label_attr': {'class': 'form-label'}}) }}
+				{{ form_widget(form.email, {'attr': {'class': 'form-control','placeholder':"inscris ton Email"}}) }}
+
+				{{ form_label(form.avatar, 'Avatar :', {'label_attr': {'class': 'form-label'}}) }}
+				{{ form_widget(form.avatar, {'attr': {'class': 'form-control pokemon','placeholder':"Entre l\'url de ton avatar"}}) }}
+
+				{{ form_label(form.website, 'Site internet :', {'label_attr': {'class': 'form-label'}}) }}
+				{{ form_widget(form.website, {'attr': {'class': 'form-control','placeholder':"Site internet"}}) }}
+
+				
+			</section>
+			{# Right #}
+			<section class="fr-right">
+
+				{{ form_label(form.streetAdress, 'Adresse :', {'label_attr': {'class': 'form-label'}}) }}
+				{{ form_widget(form.streetAdress, {'attr': {'class': 'form-control','placeholder':"adresse"}}) }}
+				
+				{{ form_label(form.postCode, 'Code postal :', {'label_attr': {'class': 'form-label'}}) }}
+				{{ form_widget(form.postCode, {'attr': {'class': 'form-control','placeholder':"Code postal"}}) }}
+
+				{{ form_label(form.city, 'Ville :', {'label_attr': {'class': 'form-label'}}) }}
+				{{ form_widget(form.city, {'attr': {'class': 'form-control','placeholder':"ville"}}) }}
+
+				{{ form_label(form.phone, 'Télépone :', {'label_attr': {'class': 'form-label'}}) }}
+				{{ form_widget(form.phone, {'attr': {'class': 'form-control','placeholder':"Télépone"}}) }}
+
+				{# Boutons #}
+				<div class="fr-button">
+
+					<a class="btn" href="
+					{% if app.user is defined and app.session.get('id') == 0  %}
+					{{ path('cv_index')}}
+					{% else %}
+					{{ path('cv_show', {'id': app.session.get('id')}) }}
+					{% endif %}
+					">
+					<i class="fas fa-undo-alt"></i>
+					</a>
+
+					<button class="btn"><i class="far fa-save"></i></button>
+					
+				</div>
+				
+			</section>
+		</div>
+	</div>
+</main>
+
+{{ form_end(form) }}

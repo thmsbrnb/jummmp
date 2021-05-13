@@ -1,0 +1,499 @@
+/* CV - Display */
+.resume-display
+{
+    padding: 2rem;
+    margin: auto;
+    width: 80rem;
+    background: var(--color-light);
+}
+
+/* CV - Display Containers*/
+.resume-info
+{
+    margin-bottom: 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-light);
+}
+
+.resume-top
+{
+    padding: 2rem 0 0 0;
+    display: flex;
+}
+
+.resume-bottom
+{
+    display: flex;
+}
+
+.resume-footer
+{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(29, 36, 36, .2);
+}
+
+/* CV - Display Items*/
+.items
+{
+    position: relative;
+    padding: 2rem;
+    display: flex;
+}
+
+.user-profile
+{
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+}
+
+.user-adress
+{
+    width: 70%;
+    background: rgba(29, 36, 36, .075);
+}
+
+.user-about p
+{
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* CV - Item Skills */
+.user-skills
+{
+    flex-direction: column;
+    border-top: 1px solid rgba(29, 36, 36, .2);
+}
+
+.skill-container
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-box
+{
+    margin: .6rem;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--color-dark);
+    border-radius: .4rem;
+}
+
+.item-skill-icon
+{
+    font-size: 2rem;
+}
+
+.item-skill
+{
+    font-size: .8rem;
+}
+
+/* CV - Item XP */
+.user-xp
+{
+    flex-direction: column;
+    border-top: 1px solid rgba(29, 36, 36, .2);
+}
+
+/* CV - Item Training*/
+.user-training
+{
+    flex-direction: column;
+    width: 65%;
+    border-top: 1px solid rgba(29, 36, 36, .2);
+}
+
+/* CV - Item Hobbies */
+.user-hobbies
+{
+    flex-direction: column;
+    width: 35%;
+    border-top: 1px solid rgba(29, 36, 36, .2);
+}
+
+/* CV - Item Text */
+.resume-info p
+{
+    text-transform: capitalize;
+}
+
+.resume-title
+{
+    line-height: 0;
+    font-size: 2rem;
+    letter-spacing: var(--font-spacing-sm);
+    color: var(--color-primary);
+}
+
+.item-user
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-user-firstname
+{
+    text-transform: capitalize;
+    font-family: var(--font-template-1);
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 2rem;
+    letter-spacing: var(--font-spacing-sm);
+}
+
+.item-user-lastname
+{
+    text-transform: capitalize;
+    font-family: var(--font-template-1);
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: var(--font-spacing-sm);
+}
+
+.item-title
+{
+    margin-bottom: 2rem;
+    font-family: var(--font-template-1);
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: var(--font-spacing-sm);
+}
+
+.item-text
+{
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: var(--font-spacing-sm);
+}
+
+.item-job
+{
+    text-transform: capitalize;
+    font-family: var(--font-template-1);
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: var(--font-spacing-sm);
+}
+
+.item-description
+{
+    margin-bottom: .6rem;
+    font-size: 1rem;
+}
+
+.item-hobbies
+{
+    text-transform: capitalize;
+}
+
+.item-text-footer
+{
+    font-style: italic;
+    font-size: .8rem;
+    color: var(--color-dark);
+    opacity: 75%;
+}
+
+/* CV - Item Avatar */
+.item-avatar
+{
+    margin-bottom: 1rem;
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 100%;
+    background: gray;
+}
+
+.item-avatar img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CV - Item Buttons */
+.edit
+{
+    margin: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .4rem;
+    font-size: 1.4rem;
+    color: var(--color-light);
+    background: var(--color-primary);
+    transition: all .1s ease-in-out;
+}
+
+.edit:hover
+{
+    background: var(--color-tertiary);
+}
+
+.btn-dashboard
+{
+    padding: 1.2rem 1.6rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: .4rem;
+    color: var(--color-light);
+    background: var(--color-primary);
+    transition: all .1s ease-in-out;
+}
+
+.btn-dashboard:hover
+{
+    background: var(--color-tertiary);
+}
+
+/* CV - Template 2*/
+.resume-top-2
+{
+    border-radius: 1rem 0 0 0;
+    background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+}
+
+.user-adress-2
+{
+    width: 70%;
+    background: transparent;
+}
+
+.item-user-firstname-2
+{
+    font-family: var(--font-title);
+    color: var(--color-light);
+}
+
+.item-user-lastname-2
+{
+    font-family: var(--font-title);
+    color: var(--color-light);  
+}
+
+.item-job-2
+{
+    font-family: var(--font-title);
+    color: var(--color-light);  
+}
+
+.item-text-2
+{
+    color: var(--color-light);  
+}
+
+.item-title-2
+{
+    font-family: var(--font-title);
+}
+
+.user-about-2 
+{
+    border-radius: 0 0 1rem 0;
+    background: var(--color-dark);
+}
+
+.skill-box-2
+{
+    border: none;
+    box-shadow: -2px 4px 6px rgba(0, 0, 0, .2);
+}
+
+.user-skills-2
+{
+    border-top: none;
+}
+
+.user-xp-2
+{
+    border-top: none;
+}
+
+.user-training-2
+{
+    border-top: none;
+    border-left: 4px solid var(--color-dark);
+}
+
+.user-hobbies-2
+{
+    border-top: none;
+    border-left: 4px solid var(--color-dark);
+}
+
+.resume-footer-2
+{
+    border: none;
+}
+
+/* CV - Template 3*/
+.resume-top-3
+{
+    background: url('/assets/cv-wallpaper3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-avatar-3
+{
+    border-radius: 1rem;
+}
+
+.item-user-firstname-3
+{
+    font-family: var(--font-template-3);
+    color: var(--color-light);
+}
+
+.item-user-lastname-3
+{
+    font-family: var(--font-template-3);
+    color: var(--color-light);  
+}
+
+.user-adress-3
+{
+    padding-right: 4rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    background: transparent;
+}
+
+.item-title-3
+{
+    font-family: var(--font-template-3);
+    color: #FF5722;
+}
+
+.item-job-3
+{
+    font-family: var(--font-template-3);
+    color: var(--color-light);  
+}
+
+/* Responsive */
+/* 840PX */
+@media screen and (max-width: 840px)
+{
+    .resume-display
+    {
+        width: 96%;
+    }
+}
+
+/* 700PX */
+@media screen and (max-width: 700px)
+{
+    .user-profile
+    {
+        width: 50%;
+    }
+
+    .user-adress
+    {
+        width: 50%;
+    }
+
+    .user-training
+    {
+        width: 50%;
+    }
+
+    .user-hobbies
+    {
+        width: 50%;
+    }
+
+    .resume-title
+    {
+        display: none;
+    }
+
+    .user-hobbies-2
+    {
+        border: none;
+    }
+
+    .btn-dashboard
+    {
+        margin: .2rem;
+    }
+
+    .resume-utilities
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* 400PX */
+@media screen and (max-width: 400px)
+{
+    .resume-display
+    {
+        padding: 1rem;
+    }
+
+    .resume-bottom
+    {
+        flex-direction: column;
+    }
+
+    .item-avatar
+    {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .item-job
+    {
+        font-size: 1.6rem;
+    }
+
+    .item-user-firstname
+    {
+        font-size: 2rem;
+    }
+
+    .item-user-lastname
+    {
+        font-size: 2rem;
+    }
+
+    .user-training
+    {
+        width: 100%;
+    }
+
+    .user-hobbies
+    {
+        width: 100%;
+    }
+}

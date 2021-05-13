@@ -1,0 +1,76 @@
+.active 
+{
+  background: var(--color-tertiary);
+}
+
+/* POP-UP */
+.pop 
+{
+  z-index: 2;
+  position: absolute;
+  top:50%;
+  left:50%;
+  padding: 4rem;
+  width: 74rem;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius:0.4rem;
+  box-shadow: -2px 4px 6px rgba(0, 0, 0, .2);
+  transform:translate(-50%,-50%);
+  background: rgba(245, 245, 245, .75);
+}
+
+.pop i 
+{
+  margin: 1rem;
+  cursor: pointer;
+  color: var(--color-dark);
+  transition: all 0.2s ease-in-out;
+}
+
+.pop i:hover 
+{
+  transform: scale(1.1);
+  opacity: 75%;
+}
+
+.pop span 
+{
+    border:1px solid transparent;
+    transition:all 0.4s ease-in-out;
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.pop span:hover 
+{
+    background: rgba(218, 165, 32, 0.282);
+    transform: scale(1.2);
+}
+
+/* TERMS */
+.annex {
+  color: var(--color-light);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.space{
+  margin-bottom: 2rem;
+}
+
+.secondary{
+  color: var(--color-secondary)
+}
+
+/* Responsive */
+/* 800PX */
+@media screen and (max-width: 800px)
+{
+  .pop 
+  {
+    width: 96%;
+  }
+}
